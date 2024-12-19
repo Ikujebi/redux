@@ -35,7 +35,7 @@ const Counter = () => {
       />
 
       <div className="flex gap-3">
-        <button onClick={addValue}>+</button>
+        <button onClick={() => dispatch(incrementByAmount(addValue))}>Add Value</button>
         <button onClick={resetAll}>reset</button>
       </div>
     </section>
